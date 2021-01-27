@@ -11,6 +11,12 @@ brew tap go-swagger/go-swagger
 brew install go-swagger
 ```
 
+## Spec validation
+
+  ```bash
+swagger validate ./swagger.yml
+  ```
+
 ## Top-down generation
 
 Following this [tutorial](https://goswagger.io/tutorial/todo-list.html):
@@ -20,8 +26,6 @@ In `/examples/tutorials/todo-list/server-complete`, I used the spec `swagger.yml
 ```bash
 swagger generate server -A TodoList -f ./swagger.yml
 ```
-
-**Note**: you can validate your spec with `swagger validate ./swagger.yml`
 
 After disabling l295-308 in `/examples/tutorials/todo-list/server-complete/restapi/server.go`, and replacing `/restapi/configure_todo_list.go` with [this file from a link in the tutorial](https://github.com/go-swagger/go-swagger/blob/master/examples/tutorials/todo-list/server-complete/restapi/configure_todo_list.go), I can...
 
