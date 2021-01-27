@@ -13,6 +13,8 @@ brew install go-swagger
 
 ## Spec validation
 
+Create your spec and validate it with:
+
   ```bash
 swagger validate ./swagger.yml
   ```
