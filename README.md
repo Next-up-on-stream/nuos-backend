@@ -11,7 +11,7 @@ brew tap go-swagger/go-swagger
 brew install go-swagger
 ```
 
-## Spec validation
+## Specification validation
 
 Create your spec and validate it with:
 
